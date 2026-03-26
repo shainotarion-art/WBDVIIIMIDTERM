@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paramore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2>Garage Music</h2>
+        <a href="home.html">Home</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <div class="main">
+        <div class="section-title">Paramore - Album</div>
+
+         <div class="albums-container">
+    <!-- SONG 1 -->
+    <div class="album" onclick="playSong('All I Wanted', 'Paramore', 'song1.mp3', 'alliwanted.jpg')">
+        <img src="alliwanted.jpg" style="width:200px; border-radius:8px;">
+        <h4>All I Wanted</h4>
+    </div>
+
+    <!-- SONG 2 -->
+    <div class="album" onclick="playSong('Still Into You', 'Paramore', 'song2.mp3', 'stillintoyou.jpg')">
+        <img src="stillintoyou.jpg" style="width:200px; border-radius:8px;">
+        <h4>Still Into You</h4>
+    </div>
+
+    <!-- SONG 3 -->
+    <div class="album" onclick="playSong('crushcrushcrush', 'Paramore', 'song3.mp3', 'crush.jpg')">
+        <img src="crush.jpg" style="width:200px; border-radius:8px;">
+        <h4>crushcrushcrush</h4>
+    </div>
+</div>
+
+</div>
+
+<!-- PLAYER -->
+<div class="player">
+
+    <div class="now-playing">
+        <img id="cover" src="alliwanted.jpg" alt="Cover">
+        <div class="song-info">
+            <p id="song-title">All I Wanted</p>
+            <p id="artist-name">Paramore</p>
+        </div>
+    </div>
+
+    <audio id="audio-player" controls></audio>
+
+</div>
+
+<script>
+function playSong(title, artist, file, cover) {
+    document.getElementById("song-title").innerText = title;
+    document.getElementById("artist-name").innerText = artist;
+    document.getElementById("cover").src = cover;
+
+    const audio = document.getElementById("audio-player");
+    audio.src = file;
+    audio.play();
+}
+</script>
+
+</body>
+</html>

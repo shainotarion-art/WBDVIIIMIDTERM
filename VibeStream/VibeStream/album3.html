@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gorillaz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2>Garage Music</h2>
+        <a href="home.html">Home</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <div class="main">
+        <div class="section-title">Drake - Album</div>
+
+         <div class="albums-container">
+    <!-- SONG 1 -->
+    <div class="album" onclick="playSong('Fair Trade', 'Drake', 'song7.mp3', 'fairtrade.jpg')">
+        <img src="fairtrade.jpg" style="width:200px; border-radius:8px;">
+        <h4>Fair Trade</h4>
+    </div>
+
+    <!-- SONG 2 -->
+    <div class="album" onclick="playSong('Marvin's Room', 'Drake', 'song8.mp3', 'marvinsroom.jpg')">
+        <img src="marvinsroom.jpg" style="width:200px; border-radius:8px;">
+        <h4> Marvin's Room </h4>
+    </div>
+
+    <!-- SONG 3 -->
+    <div class="album" onclick="playSong('Passionfruit', 'Drake', 'song9.mp3', 'passionfruit.jpg')">
+        <img src="passionfruit.jpg" style="width:200px; border-radius:8px;">
+        <h4>Passionfruit</h4>
+    </div>
+</div>
+
+</div>
+
+<!-- PLAYER -->
+<div class="player">
+
+    <div class="now-playing">
+        <img id="cover" src="fairtrade.jpg" alt="Cover">
+        <div class="song-info">
+            <p id="song-title">Fair Trade</p>
+            <p id="artist-name">Drake</p>
+        </div>
+    </div>
+
+    <audio id="audio-player" controls></audio>
+
+</div>
+
+<script>
+function playSong(title, artist, file, cover) {
+    document.getElementById("song-title").innerText = title;
+    document.getElementById("artist-name").innerText = artist;
+    document.getElementById("cover").src = cover;
+
+    const audio = document.getElementById("audio-player");
+    audio.src = file;
+    audio.play();
+}
+</script>
+
+</body>
+</html>

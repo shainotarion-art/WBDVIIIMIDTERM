@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', Helvetica, sans-serif;
+}
+
+body {
+    background: 
+    linear-gradient(to bottom, rgba(29, 185, 84, 0.35) 0%, rgba(29, 185, 84, 0) 35%),
+    linear-gradient(135deg, #0f0f0f, #121212, #161616);
+    color: white;
+    min-height: 100vh;
+}
+
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.login-box {
+    background-color: #181818;
+    padding: 50px;
+    border-radius: 8px;
+    width: 350px;
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: none;
+    background-color: #282828;
+    color: white;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #1ed760;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+.sidebar {
+    width: 240px;
+    background-color: #000000;
+    padding: 25px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.sidebar a {
+    display: block;
+    color: #b3b3b3;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+
+.main {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.album-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.album {
+    background-color: #181818;
+    border-radius: 8px;
+    width: 180px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.album:hover {
+    background-color: #282828;
+}
+
+.album img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+    display: block;
+}
+
+.album h4 {
+    margin: 10px 0 5px 0;
+    font-size: 16px;
+}
+
+.album p {
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.album a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 240px;
+    right: 0;
+    height: 90px;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+audio {
+    width: 400px;
+}
+
+.now-playing {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.now-playing img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.song-info p:first-child {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.song-info p:last-child {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.now-playing {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.now-playing img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.song-info p:first-child {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.song-info p:last-child {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+.albums-container {
+    display: flex;           
+    gap: 20px;             
+    flex-wrap: wrap;         
+}
+
+.album {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.album:hover {
+    transform: scale(1.05);  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
