@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gorillaz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2>Garage Music</h2>
+        <a href="home.html">Home</a>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <div class="main">
+        <div class="section-title">Gorillaz - Album</div>
+
+         <div class="albums-container">
+    <!-- SONG 1 -->
+    <div class="album" onclick="playSong('19-2000', 'Gorillaz', 'song4.mp3', '192000.jpg')">
+        <img src="192000.jpg" style="width:200px; border-radius:8px;">
+        <h4>19-2000</h4>
+    </div>
+
+    <!-- SONG 2 -->
+    <div class="album" onclick="playSong('She's my Collar', 'Gorillaz', 'song5.mp3', 'shesmycollar.jpg')">
+        <img src="shesmycollar.jpg" style="width:200px; border-radius:8px;">
+        <h4>She's My Collar (feat. Kali Uchis) </h4>
+    </div>
+
+    <!-- SONG 3 -->
+    <div class="album" onclick="playSong('Dare', 'Gorillaz', 'song6.mp3', 'dares.png')">
+        <img src="dares.png" style="width:200px; border-radius:8px;">
+        <h4>Dare</h4>
+    </div>
+</div>
+
+</div>
+
+<!-- PLAYER -->
+<div class="player">
+
+    <div class="now-playing">
+        <img id="cover" src="192000.jpg" alt="Cover">
+        <div class="song-info">
+            <p id="song-title">19-2000</p>
+            <p id="artist-name">Gorillaz</p>
+        </div>
+    </div>
+
+    <audio id="audio-player" controls></audio>
+
+</div>
+
+<script>
+function playSong(title, artist, file, cover) {
+    document.getElementById("song-title").innerText = title;
+    document.getElementById("artist-name").innerText = artist;
+    document.getElementById("cover").src = cover;
+
+    const audio = document.getElementById("audio-player");
+    audio.src = file;
+    audio.play();
+}
+</script>
+
+</body>
+</html>
