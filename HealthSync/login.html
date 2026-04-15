@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="center-container">
+
+  <div class="grid">
+
+    <div class="card">
+      <h2>Admin Access</h2>
+      <p><b>Username:</b> admin</p>
+      <p><b>Password:</b> admin</p>
+    </div>
+
+    <div class="card">
+      <h2>Staff Access</h2>
+      <p><b>Username:</b> staff</p>
+      <p><b>Password:</b> staff</p>
+    </div>
+
+    <div class="card">
+      <h2>User Access</h2>
+      <p><b>Any username</b></p>
+      <p><b>Any password</b></p>
+    </div>
+
+    <div class="card">
+      <input id="user" placeholder="Username">
+      <input id="pass" type="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>
