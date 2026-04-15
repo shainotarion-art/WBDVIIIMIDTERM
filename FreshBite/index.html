@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<title>FreshBite Prep</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">FreshBite</div>
+  <nav>
+    <a href="#">Meals</a>
+    <a href="#">Billing</a>
+    <a href="#">Plans</a>
+  </nav>
+  <div class="profile">SG</div>
+</header>
+
+<section class="hero">
+  <span class="badge">New Menu Available</span>
+  <h1>Simplify Your Nutrition.<br>Elevate Your Life.</h1>
+  <p>Chef-curated healthy meals delivered to your doorstep.</p>
+  <div class="hero-buttons">
+    <button class="btn primary">Get Started</button>
+    <button class="btn secondary" onclick="toggleDrawer()">Nutrition Facts</button>
+  </div>
+</section>
+
+<section class="menu">
+  <h2>Our Signature Dishes</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="salmon.jpg">
+      <div class="card-info">
+        <p>Salmon Salad</p>
+        <span>350 kcal</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="keto.jpg">
+      <div class="card-info">
+        <p>Keto Bowl</p>
+        <span>420 kcal</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="pasta.jpg">
+      <div class="card-info">
+        <p>Vegan Pasta</p>
+        <span>310 kcal</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="protein.jpg">
+      <div class="card-info">
+        <p>Protein Wrap</p>
+        <span>380 kcal</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="drawer" id="drawer">
+  <h2>Login</h2>
+  <input type="text" placeholder="Username">
+  <input type="password" placeholder="Password">
+  <button>Login</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

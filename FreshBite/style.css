@@ -1,0 +1,92 @@
+body{
+  color:white;
+  padding:8px 12px;
+  border-radius:50%;
+}
+
+.hero{
+  text-align:center;
+  padding:80px 20px;
+}
+
+.badge{
+  background:#c8e6c9;
+  padding:5px 12px;
+  border-radius:20px;
+}
+
+.hero h1{
+  font-size:42px;
+  color:#1b5e20;
+}
+
+.hero-buttons{
+  margin-top:20px;
+}
+
+.btn{
+  padding:12px 20px;
+  margin:5px;
+  border:none;
+  border-radius:10px;
+}
+
+.primary{
+  background:#2e7d32;
+  color:white;
+}
+
+.secondary{
+  background:white;
+  border:1px solid #ccc;
+}
+
+.menu{
+  text-align:center;
+  padding:40px;
+}
+
+.grid{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.card{
+  width:220px;
+  margin:15px;
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+}
+
+.card-info{
+  display:flex;
+  justify-content:space-between;
+  padding:10px;
+}
+
+.drawer{
+  position:fixed;
+  right:-300px;
+  top:0;
+  width:300px;
+  height:100%;
+  background:#a5d6a7;
+  padding:20px;
+  transition:0.3s;
+}
+
+.drawer.active{
+  right:0;
+}
