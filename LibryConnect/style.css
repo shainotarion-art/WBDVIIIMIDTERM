@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&display=swap');
+
+body{
+    background:#e8f5e9;
+    font-family:'Poppins', sans-serif;
+    margin:0;
+}
+
+/* HEADER */
+header{
+    background:#2e7d32;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+nav a{
+    margin:10px;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    background:#66bb6a;
+    border-radius:8px;
+}
+
+/* SEARCH SECTION */
+.search-section{
+    text-align:center;
+    margin:40px;
+}
+
+.search-section input{
+    width:50%;
+    padding:15px;
+    border-radius:10px;
+    border:2px solid #2e7d32;
+}
+
+.search-section button{
+    padding:15px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+}
+
+/* FLOATING CARDS */
+.results{
+    width:90%;
+    margin:auto;
+}
+
+.card{
+    float:left;
+    width:28%;
+    margin:2%;
+    padding:20px;
+    background:white;
+    border-left:10px solid #2e7d32;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    border-radius:10px;
+    text-align:center;
+}
+
+/* FLOATING BOX */
+.floating-box{
+    width:40%;
+    margin:80px auto;
+    padding:30px;
+    background:white;
+    border-left:10px solid #1b5e20;
+    box-shadow:0 15px 25px rgba(0,0,0,0.3);
+    border-radius:15px;
+    text-align:center;
+}
+
+/* BUTTONS */
+button{
+    background:#388e3c;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+    clear:both;
+    text-align:center;
+    margin-top:50px;
+}

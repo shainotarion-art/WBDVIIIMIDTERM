@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Libry Connect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Libry Connect</h1>
+    <nav>
+        <a href="index.html">Search</a>
+        <a href="status.html">Loans</a>
+        <a href="login.html">Members</a>
+    </nav>
+</header>
+
+<section class="search-section">
+    <h2>Search Books</h2>
+    <input type="text" id="searchBar" placeholder="Search for books...">
+    <button onclick="searchBook()">Search</button>
+</section>
+
+<section class="results">
+    <div class="card">
+        <h3>Book 1</h3>
+        <a href="book1.html">View</a>
+    </div>
+
+    <div class="card">
+        <h3>Book 2</h3>
+        <a href="book2.html">View</a>
+    </div>
+
+    <div class="card">
+        <h3>Book 3</h3>
+        <a href="book3.html">View</a>
+    </div>
+</section>
+
+<footer>
+    <button onclick="showOverdue()">Overdue</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
