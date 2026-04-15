@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Master Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LEFT SIDEBAR -->
+<div class="sidebar floating-card">
+  <div class="logo-barcode">||| SM |||</div>
+
+  <button onclick="showSection('stock')">Stock</button>
+  <button onclick="showSection('suppliers')">Suppliers</button>
+  <button onclick="showSection('orders')">Orders</button>
+  <button onclick="showSection('reports')">Reports</button>
+</div>
+
+<!-- MAIN DASHBOARD -->
+<div class="main-content">
+
+  <!-- STOCK -->
+  <div id="stock" class="section floating-card">
+    <h2>📦 STOCK INVENTORY</h2>
+
+    <div class="table-box">
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Qty</th>
+          <th>Limit</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Rice</td>
+          <td>120</td>
+          <td>50</td>
+          <td>OK</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="action-box">
+      <input type="text" placeholder="Scan / Input Item">
+      <input type="number" placeholder="Set Stock Limit">
+      <button class="btn-action">Update Stock</button>
+    </div>
+  </div>
+
+  <!-- SUPPLIERS -->
+  <div id="suppliers" class="section floating-card hidden">
+    <h2>🚚 SUPPLIERS</h2>
+
+    <div class="grid-box">
+      <div class="mini-card">Supplier A - Active</div>
+      <div class="mini-card">Supplier B - Pending</div>
+      <div class="mini-card">Supplier C - Active</div>
+    </div>
+
+    <button class="btn-action">Alert Supplier</button>
+  </div>
+
+  <!-- ORDERS -->
+  <div id="orders" class="section floating-card hidden">
+    <h2>📑 ORDERS</h2>
+
+    <ul>
+      <li>Order #001 - Processing</li>
+      <li>Order #002 - Delivered</li>
+    </ul>
+
+    <button class="btn-action">Create Order</button>
+  </div>
+
+  <!-- REPORTS -->
+  <div id="reports" class="section floating-card hidden">
+    <h2>📊 REPORT GENERATOR</h2>
+
+    <p>Generate inventory analytics and supplier reports.</p>
+
+    <button class="btn-action">Generate Report</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
