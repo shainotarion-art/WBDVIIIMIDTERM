@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    background: linear-gradient(to bottom, #fff0f6, #ffe8f0);
+    color: #5a3e36;
+}
+
+/* HEADER */
+.header {
+    background: #ffb3c6;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    color: white;
+}
+
+.header nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* HERO */
+.hero {
+    height: 70vh;
+    background: url('croissant.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 182, 193, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    background: rgba(255,255,255,0.85);
+    padding: 40px;
+    border-radius: 30px;
+}
+
+.hero-content h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 45px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ff8fab;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.products {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 25px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background: #ffc2d1;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #5a3e36;
+    font-weight: 600;
+}
+
+/* PRODUCT PAGE */
+.product-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px;
+    flex-wrap: wrap;
+}
+
+.product-image img {
+    width: 350px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product-details {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.price-big {
+    font-size: 22px;
+    color: #ff5d8f;
+    font-weight: bold;
+}
+
+.add-cart {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff8fab;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FORMS */
+.form-box {
+    width: 350px;
+    margin: 80px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.form-box input,
+.form-box select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: 1px solid #ffd6e0;
+}
+
+.form-box button {
+    padding: 12px 25px;
+    background: #ff8fab;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* THANK YOU */
+.thank-box {
+    width: 400px;
+    margin: 100px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.hero-split {
+    height: 80vh;
+    background: url('croissant.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-split::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,105,135,0.6), rgba(255,182,193,0.6));
+}
+
+.hero-overlay {
+    position: relative;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 50px 80px;
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.hero-overlay h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero-overlay p {
+    margin: 15px 0 25px;
+    font-size: 18px;
+}
